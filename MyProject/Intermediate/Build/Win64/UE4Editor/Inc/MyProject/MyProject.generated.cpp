@@ -15,12 +15,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
-	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
 
+	MYPROJECT_API class UClass* Z_Construct_UClass_UEventManager_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_UEventManager();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectCharacter_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectCharacter();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectGameMode_NoRegister();
@@ -28,6 +30,45 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 	MYPROJECT_API class UClass* Z_Construct_UClass_UWallChangerr_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_UWallChangerr();
 	MYPROJECT_API class UPackage* Z_Construct_UPackage__Script_MyProject();
+	void UEventManager::StaticRegisterNativesUEventManager()
+	{
+	}
+	UClass* Z_Construct_UClass_UEventManager_NoRegister()
+	{
+		return UEventManager::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UEventManager()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = UEventManager::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<UEventManager> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("EventManager.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("EventManager.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UEventManager, 2618833061);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UEventManager(Z_Construct_UClass_UEventManager, &UEventManager::StaticClass, TEXT("/Script/MyProject"), TEXT("UEventManager"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UEventManager);
 	void AMyProjectCharacter::StaticRegisterNativesAMyProjectCharacter()
 	{
 	}
@@ -175,8 +216,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/MyProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x4C911EDE;
-			Guid.B = 0xF50E6248;
+			Guid.A = 0xBA692FA6;
+			Guid.B = 0x2E86D09D;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

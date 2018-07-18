@@ -5,6 +5,9 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef MYPROJECT_EventManager_generated_h
+	#include "EventManager.h"
+#endif
 #ifndef MYPROJECT_MyProjectCharacter_generated_h
 	#include "MyProjectCharacter.h"
 #endif

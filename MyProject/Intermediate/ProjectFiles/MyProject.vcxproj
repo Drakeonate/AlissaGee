@@ -568,6 +568,8 @@
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Config\DefaultInput.ini" />
+		<ClCompile Include="..\..\Source\MyProject\EventManager.cpp" />
+		<ClInclude Include="..\..\Source\MyProject\EventManager.h" />
 		<None Include="..\..\Source\MyProject\MyProject.Build.cs" />
 		<ClCompile Include="..\..\Source\MyProject\MyProject.cpp" />
 		<ClInclude Include="..\..\Source\MyProject\MyProject.h" />

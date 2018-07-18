@@ -23,9 +23,9 @@
 /wd4838
 /w44668
 /I "D:\Programms\Epic Games\UE_4.16\Engine\Source"
-/I "D:\Unreal Projects\Allysa\MyProject\Source"
-/I "D:\Unreal Projects\Allysa\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject"
-/I "D:\Unreal Projects\Allysa\MyProject\Source\MyProject"
+/I "D:\Unreal Projects\Allysa\AlissaGee\MyProject\Source"
+/I "D:\Unreal Projects\Allysa\AlissaGee\MyProject\Intermediate\Build\Win64\UE4Editor\Inc\MyProject"
+/I "D:\Unreal Projects\Allysa\AlissaGee\MyProject\Source\MyProject"
 /I "D:\Programms\Epic Games\UE_4.16\Engine\Source\Runtime\Core\Public"
 /I "D:\Programms\Epic Games\UE_4.16\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "D:\Programms\Epic Games\UE_4.16\Engine\Source\Runtime\Core\Public\Async"
@@ -317,9 +317,9 @@
 /FI"D:\Programms\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"D:\Programms\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"D:\Programms\Epic Games\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Unreal Projects\Allysa\MyProject\Source\MyProject\MyProjectGameMode.cpp"
-/FI"D:\Unreal Projects\Allysa\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h"
-/Fo"D:\Unreal Projects\Allysa\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\MyProjectGameMode.cpp.obj"
+"D:\Unreal Projects\Allysa\AlissaGee\MyProject\Source\MyProject\MyProjectGameMode.cpp"
+/FI"D:\Unreal Projects\Allysa\AlissaGee\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\Definitions.MyProject.h"
+/Fo"D:\Unreal Projects\Allysa\AlissaGee\MyProject\Intermediate\Build\Win64\UE4Editor\Development\MyProject\MyProjectGameMode.cpp.obj"
 /TP
 /GR-
 /W4

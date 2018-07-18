@@ -39,17 +39,9 @@ void UWallChangerr::CheckWallHit()
 	//gameObject->
 }
 
-void AActor::ReceiveHit(class UPrimitiveComponent * MyComp,
-	AActor * Other,
-	class UPrimitiveComponent * OtherComp,
-	bool bSelfMoved,
-	FVector HitLocation,
-	FVector HitNormal,
-	FVector NormalImpulse,
-	const FHitResult & Hit){
-	if ((GetOwner()->GetActorLocation().X + GetOwner()->GetActorLocation().Y + GetOwner()->GetActorLocation().Z) -  (Other->GetActorRightVector().X + Other->GetActorRightVector().Y + Other->GetActorRightVector().Z) <= 20) {
-		UStaticMeshComponent *comp;
-		comp = 
-	}
-
-}
+//void AActor::ReceiveHit(class UPrimitiveComponent* MyComp, AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit){
+//	if ((GetOwner()->GetActorLocation().X + GetOwner()->GetActorLocation().Y + GetOwner()->GetActorLocation().Z) -  (Other->GetActorRightVector().X + Other->GetActorRightVector().Y + Other->GetActorRightVector().Z) <= 20) {
+//		//comp = 
+//	}
+//
+//}

@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\MyProject.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{10E8EC03-78CD-4EF6-9558-9287BD42F582}</UniqueIdentifier>
+			<UniqueIdentifier>{6E1A2932-AF54-45D2-AD35-1D5E2BC8189A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\MyProject.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{A1B8D69A-2E26-43FA-B38F-F4F91F5EA54C}</UniqueIdentifier>
+			<UniqueIdentifier>{589BF37E-2E9D-4272-A169-CFE2B4E278C5}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,8 +31,14 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\MyProject">
-			<UniqueIdentifier>{E33D1347-8A03-49FD-9518-9679331B5CAC}</UniqueIdentifier>
+			<UniqueIdentifier>{342BEC4A-8C77-43A2-8CAE-58C61B4C2BEA}</UniqueIdentifier>
 		</Filter>
+		<ClCompile Include="..\..\Source\MyProject\EventManager.cpp">
+			<Filter>Source\MyProject</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\MyProject\EventManager.h">
+			<Filter>Source\MyProject</Filter>
+		</ClInclude >
 		<None Include="..\..\Source\MyProject\MyProject.Build.cs">
 			<Filter>Source\MyProject</Filter>
 		</None >
