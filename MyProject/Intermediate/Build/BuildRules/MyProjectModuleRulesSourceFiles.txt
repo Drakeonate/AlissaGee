@@ -1,0 +1,3 @@
+D:\Unreal Projects\Allysa\MyProject\Source\MyProject\MyProject.Build.cs
+D:\Unreal Projects\Allysa\MyProject\Source\MyProject.Target.cs
+D:\Unreal Projects\Allysa\MyProject\Source\MyProjectEditor.Target.cs
