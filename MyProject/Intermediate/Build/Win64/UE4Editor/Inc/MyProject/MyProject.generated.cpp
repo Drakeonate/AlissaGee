@@ -16,11 +16,16 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 #if USE_COMPILED_IN_NATIVES
 // Cross Module References
 	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_AGameModeBase();
 
+	MYPROJECT_API class UClass* Z_Construct_UClass_UCustomEvent_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_UCustomEvent();
+	MYPROJECT_API class UClass* Z_Construct_UClass_UDoorOpenEvent_NoRegister();
+	MYPROJECT_API class UClass* Z_Construct_UClass_UDoorOpenEvent();
 	MYPROJECT_API class UClass* Z_Construct_UClass_UEventManager_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_UEventManager();
 	MYPROJECT_API class UClass* Z_Construct_UClass_AMyProjectCharacter_NoRegister();
@@ -30,6 +35,92 @@ void EmptyLinkFunctionForGeneratedCode1MyProject() {}
 	MYPROJECT_API class UClass* Z_Construct_UClass_UWallChangerr_NoRegister();
 	MYPROJECT_API class UClass* Z_Construct_UClass_UWallChangerr();
 	MYPROJECT_API class UPackage* Z_Construct_UPackage__Script_MyProject();
+	void UCustomEvent::StaticRegisterNativesUCustomEvent()
+	{
+	}
+	UClass* Z_Construct_UClass_UCustomEvent_NoRegister()
+	{
+		return UCustomEvent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UCustomEvent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = UCustomEvent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<UCustomEvent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("CustomEvent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("CustomEvent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UCustomEvent, 886832214);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UCustomEvent(Z_Construct_UClass_UCustomEvent, &UCustomEvent::StaticClass, TEXT("/Script/MyProject"), TEXT("UCustomEvent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UCustomEvent);
+	void UDoorOpenEvent::StaticRegisterNativesUDoorOpenEvent()
+	{
+	}
+	UClass* Z_Construct_UClass_UDoorOpenEvent_NoRegister()
+	{
+		return UDoorOpenEvent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UDoorOpenEvent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UCustomEvent();
+			Z_Construct_UPackage__Script_MyProject();
+			OuterClass = UDoorOpenEvent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_speed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("speed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(speed, UDoorOpenEvent), 0x0010000000000001);
+				UProperty* NewProp_door = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("door"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(door, UDoorOpenEvent), 0x0010000000000001, Z_Construct_UClass_AActor_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<UDoorOpenEvent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("Custom"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("DoorOpenEvent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("DoorOpenEvent.h"));
+				MetaData->SetValue(NewProp_speed, TEXT("Category"), TEXT("DoorOpenEvent"));
+				MetaData->SetValue(NewProp_speed, TEXT("ModuleRelativePath"), TEXT("DoorOpenEvent.h"));
+				MetaData->SetValue(NewProp_door, TEXT("Category"), TEXT("DoorOpenEvent"));
+				MetaData->SetValue(NewProp_door, TEXT("ModuleRelativePath"), TEXT("DoorOpenEvent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UDoorOpenEvent, 2474959471);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UDoorOpenEvent(Z_Construct_UClass_UDoorOpenEvent, &UDoorOpenEvent::StaticClass, TEXT("/Script/MyProject"), TEXT("UDoorOpenEvent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UDoorOpenEvent);
 	void UEventManager::StaticRegisterNativesUEventManager()
 	{
 	}
@@ -216,8 +307,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/MyProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xBA692FA6;
-			Guid.B = 0x2E86D09D;
+			Guid.A = 0xA65C0421;
+			Guid.B = 0x044138D8;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

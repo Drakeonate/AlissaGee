@@ -5,6 +5,12 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#ifndef MYPROJECT_CustomEvent_generated_h
+	#include "CustomEvent.h"
+#endif
+#ifndef MYPROJECT_DoorOpenEvent_generated_h
+	#include "DoorOpenEvent.h"
+#endif
 #ifndef MYPROJECT_EventManager_generated_h
 	#include "EventManager.h"
 #endif
