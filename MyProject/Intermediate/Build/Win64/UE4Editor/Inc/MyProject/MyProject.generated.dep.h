@@ -14,6 +14,9 @@
 #ifndef MYPROJECT_EventManager_generated_h
 	#include "EventManager.h"
 #endif
+#ifndef MYPROJECT_FlickeringLight_generated_h
+	#include "FlickeringLight.h"
+#endif
 #ifndef MYPROJECT_MyProjectCharacter_generated_h
 	#include "MyProjectCharacter.h"
 #endif

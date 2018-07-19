@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<CrashGUID>UE4CC-Windows-2D0B85D643F53011F2A196A2D740C217_0000</CrashGUID>
+		<ProcessId>4520</ProcessId>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<IsEnsure>false</IsEnsure>
+		<IsAssert>true</IsAssert>
+		<CrashType>Assert</CrashType>
+		<SecondsSinceStart>4787</SecondsSinceStart>
+		<GameName>UE4-MyProject</GameName>
+		<ExecutableName>UE4Editor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>Windows</PlatformName>
+		<PlatformNameIni>Windows</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Dirty</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>4.16.3-3561208+++UE4+Release-4.16</EngineVersion>
+		<CommandLine>&quot;D:/Unreal Projects/Allysa/AlissaGee/MyProject/MyProject.uproject&quot;-EpicPortal</CommandLine>
+		<LanguageLCID>1031</LanguageLCID>
+		<AppDefaultLocale>de-DE</AppDefaultLocale>
+		<BuildVersion>++UE4+Release-4.16-CL-3561208</BuildVersion>
+		<IsUE4Release>true</IsUE4Release>
+		<UserName>Drakeonate</UserName>
+		<BaseDir>D:/Programms/Epic Games/UE_4.16/Engine/Binaries/Win64/</BaseDir>
+		<RootDir>D:/Programms/Epic Games/UE_4.16/</RootDir>
+		<MachineId>BA9E25CD45A044A36A5CC88549E639C5</MachineId>
+		<LoginId>ba9e25cd45a044a36a5cc88549e639c5</LoginId>
+		<EpicAccountId>0c1bb54912a24d10a0e272c49ebe8343</EpicAccountId>
+		<CallStack />
+		<SourceContext />
+		<UserDescription />
+		<UserActivityHint>Layout=&quot;LevelEditorToolBar&quot; Label=&quot;Toolbar&quot; Content=SHorizontalBox</UserActivityHint>
+		<ErrorMessage>Fatal error: [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBaseUtility.cpp] [Line: 273] &nl;IsA(NULL) cannot yield meaningful results&nl;</ErrorMessage>
+		<CrashDumpMode>0</CrashDumpMode>
+		<CrashReporterMessage />
+		<Misc.NumberOfCores>4</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>8</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+		<Misc.CPUBrand>Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>NVIDIA GeForce GTX 1070</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Windows 10</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor />
+		<MemoryStats.TotalPhysical>34310225920</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>140737488224256</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>32</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>22307360768</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>140733318922240</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>1882906624</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>2059878400</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>2708987904</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>3003396096</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<TimeOfCrash>636675879146300000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<PlatformFullName>Win64 [Windows 10  64b]</PlatformFullName>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+	</RuntimeProperties>
+	<PlatformProperties>
+		<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+	</PlatformProperties>
+</FGenericCrashContext>
